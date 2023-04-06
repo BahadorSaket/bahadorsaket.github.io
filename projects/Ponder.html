@@ -233,7 +233,66 @@
                     <h6><span>Tracking Timelines and Milestones</span></h6>
                      <p>    I then created a Jira board to track our progress, manage our backlog of work items, and collaborate with each other. We also used Jira for creating and assigning bugs/issues.</p>
 
-        
+                     <h6>Risks and Mitigation</h6>
+                     <table class="textContent">
+                         <tr>
+                             <th>Risks</th>
+                             <th>Mitigation</th>
+                         </tr>
+                         <tr>
+                             <td>
+                                 The failure to connect to the customer's datawarehouse.
+                             </td>
+                             <td>
+                                 <ul>
+                                     <li><span> 01.</span> Implement automated notifications that alert users when a connection with the warehouse is established. Also, inform users when their connection is failed.</li>
+                                 </ul>
+                             </td>
+                         </tr>
+                         <tr>
+                             <td>
+                                 The risk of unauthorized access to sensitive data, resulting in data theft or loss.
+                             </td>
+                             <td>
+                                 <ul>
+                                     <li><span> 01.</span> Use robust data encryption technologies, multi-factor authentication, and secure hosting environments to protect user data. Regularly test and audit the security of the system and adopt the best security practices.</li> 
+                                 </ul>
+                             </td>
+                         </tr>
+             
+                         <tr>
+                             <td>
+                                 The risk of inadvertently pulling data into memory.
+                             </td>
+                             <td>
+                                 <ul>
+                                     <li><span> 01.</span> Implement automated notifications that aler users that pulling data into memory could be expensive and result in "our of memory" issues.</li> <br>
+                                     <li><span> 02.</span> Explain the documentation that customers should avoid pulling data into memory.</li> 
+                                 </ul>
+                             </td>
+                         </tr>
+             
+                         <tr>
+                             <td>
+                                 The risk of executing expensive queries more than one time in a row.
+                             </td>
+                             <td>
+                                 <ul>
+                                     <li><span> 01.</span> Ensure we conver pandas to SQL in an optimize way to reduce execution cost.</li> <br>
+                                     <li><span> 02.</span> Provide a monitoring dashboard to identify any long-running queries that may be consuming excessive resources.</li> <br>
+                                     <li><span> 03.</span> Implement query caching to store the results of expensive queries in memory.</li> 
+                                 </ul>
+                             </td>
+                         </tr>
+             
+             
+                     </table>
+             
+             
+             
+              <p class="section-divider">
+                         ...
+                     </p>
                     <div class="square_process">
                         <img src="../assets/images/ponderJira.png">
                     </div>
