@@ -114,7 +114,7 @@
                       <li><span class="itemInstruction"> 04.</span> <mark>Dependency on team skills:</mark> During our conversations, we learned that some individuals rely on the skill sets of their team members, specifically in SQL or Spark, when it comes to dealing with large data. For instance, a data scientist at Amazon mentioned that they frequently ask their colleague to read data from the database using SQL. However, this often leads to delays in their work as they may have to wait for several hours or face additional communication due to differences in the data obtained.</li>
                 </ul>
 
-                <h6><span>Product-Market Fit</span></h6>
+                <h6><span>Segment Prioritization</span></h6>
                 <p>
                     Our research has revealed that the market size for <mark>individual data enthusiasts</mark> is significantly larger than that of data teams in organizations. 
                     Furthermore, in our discussions with many data enthusiasts, we discovered that they had a strong preference for using pandas for their data analysis. 
@@ -124,9 +124,10 @@
                     Moreover, they expressed their desire to use our proposed solution on a daily basis and pay for it, as they believe our product can effectively address their current challenges with big data.
                     Based on these findings, we have decided to shift our focus to target data teams in organizations as our primary customer segment.
                      </p>
+
                      <h6><span>Competitive analysis of well-known tools used for scaling pandas</span></h6>
                      <p>I conducted competitive analysis of well-known libraries and technologies that try to add more power to pandas in various ways. 
-                      The helped me and the rest of the team in understanding the strengths and weaknesses of each tool and how they stack up against each other.
+                      This helped me and the rest of the team in understanding the strengths and weaknesses of each tool and how they stack up against each other.
                       </p>
                       <p>
                        <h6 class="variant">Key takeaways from my competitive analysis</h6>
@@ -135,7 +136,10 @@
                               <li><span class="itemInstruction"> 02.</span> Even though Modin is drop-in replacement for pandas, it still require users to manage clusters and use Dask or Ray as engine.</li>
                               <li><span class="itemInstruction"> 03.</span> Mars project is very incomplete. We were not even able to use the library.</li>
                           </ul>
-                  </p>
+                        
+                        In summary, what we learned was that the there is lack of platform that enable users to scale their pandas workflows without having to <mark>manage computing clusters</mark> or <mark>learning a new syntax</mark>.
+                        </p>
+
                  
                      <table class="textContent">
                       <tr>
