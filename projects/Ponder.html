@@ -211,7 +211,65 @@
                      <h6>Product Development</h6>
                      <h6><span>User Stories & Acceptance Criteria</span></h6>
 
-
+                     <table class="textContent">
+                        <tr>
+                            <th>User Story</th>
+                            <th>Acceptance Criteria</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                As a data scientist, I would expect your syntax to be identical to that of pandas.
+                            </td>
+                            <td>
+                                <ul>
+                                    <li><span> 01.</span> Our marketing, sales, and documentation materials should emphasize that our solution is a drop-in replacement for pandas. </li> <br>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                As a data engineer, I prefer to use your solution in my own development environment rather than using it solely in notebooks.
+                            </td>
+                            <td>
+                                <ul>
+                                    <li><span> 01.</span> Enable customers to pip install ponder package on their own machines without having to rely on our UI. </li> <br>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                 As a data engineer, I never want my data leave where it lives.
+                            </td>
+                            <td>
+                                <ul>
+                                    <li><span> 01.</span> Ensure the entire computation is pushed down to the data warehouse. </li> <br>
+                                    <li><span> 02.</span> Avoid executing queries on the memory. </li> <br>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                As an analyst, I want to monitor long-running queries that may be consuming excessive memory and computation resources.
+                            </td>
+                            <td>
+                                <ul>
+                                    <li><span> 01.</span> Provide a monitoring dashboard to identify any long-running queries that may be consuming excessive resources.</li> <br>
+                                    <li><span> 02.</span> Provide automated notifications that alert users when a runnign expensive queries.</li> <br>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                As a data analyst, it is essential for me to have the ability to access and extract data from various sources, including Snowflake, BigQuery and S3 Bucket.
+                            </td>
+                            <td>
+                                <ul>
+                                    <li><span> 01.</span> Support connecting to multiple warehouses at the same time.</li> <br>
+                                    <li><span> 02.</span> Support APIs for reading data from different resources and in various formats (e.g., csv, parquet).</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
 
 
                      <h6><span>Risk & Mitigation</span></h6>
